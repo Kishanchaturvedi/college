@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <!-- popins fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap iocn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- owl-carousel cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+
+
+    <title>Hitkarni college</title>
+
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <header>
+            <nav class=" ps-4 fixed-top bg-white pe-2">
+                <div class="d-lg-block d-none">
+                    <div class=" d-flex justify-content-between  py-3">
+                        <a href="" class=""><img src="/img/logo (1).png" height="60" alt="" class=""></a>
+                        <ul class=" nav d-flex align-items-center gap-4">
+                            <a href="/" class="nav-link text-md">Home</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  text-md " href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    About College <img src="/img/Vector.svg" alt="" class="">
+                                </a>
+                                <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item text-md pt-2 px-4" href="/clg/about-clg.html">About us</a></li>
+                                    <li><a class="dropdown-item text-md pt-2 px-4 mt-2" href="/clg/about-clg.html">About College</a></li>
+                                    <li><a class="dropdown-item text-md pt-2 px-4 mt-2" href="/clg/about-clg.html">Governing Body</a></li>
+                                    <li><a class="dropdown-item text-md pt-2 px-4 mt-2"
+                                            href="/proffeser/about-proffeser.html">About Professor</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  text-md " href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Programmes Offered <img src="/img/Vector.svg" alt="" class="">
+                                </a>
+                                <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item text-md pt-2 px-4" href="/addmission/addmision.html">B.Com</a></li>
+                                    <li><a class="dropdown-item text-md pt-2 px-4 mt-2" href="/addmission/addmision.html">BMS</a></li>
+                                    <li><a class="dropdown-item text-md pt-2 px-4 mt-2" href="/addmission/addmision.html">BAF</a></li>
+                                  
+                                </ul>
+                            </li>
+                            <a href="" class="nav-link text-md">Gallery</a>
+                            <a href="/contact/contact.html" class="nav-link text-md">Contact us</a>
+                            <a type="button" href="/addmission/addmision.html"
+                                class="btn btn rounded-pill btn-blue text-md  px-4 py-1 m-0">Admission</a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class=" ps-4 fixed-top bg-white pe-2">
+                <div class="d-lg-none d-block">
+                    <div class=" d-flex justify-content-between  py-3">
+                        <a href="" class=""><img src="/img/logo (2).png" height="60" alt="" class=""></a>
+                        <span class="fs-2 d-lg-none d-block pe-3 opennav" onclick="openNav()">&#9776;</span>
+                        <ul class="sidenav nav d-flex align-items-center gap-4" id="mySidenav">
+
+                            <a href="javascript:void(0)" class="closebtn d-lg-none d-block"
+                                onclick="closeNav()">&times;</a>
+                            <a href="" class="nav-link text-md">Home</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  text-md " href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    About us <img src="/img/Vector.svg" alt="" class="">
+                                </a>
+                                <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item text-md" href="/clg/about-clg.html">college</a></li>
+                                    <li><a class="dropdown-item text-md"
+                                            href="/proffeser/about-proffeser.html">Professor</a></li>
+                                </ul>
+                            </li>
+                            <a href="" class="nav-link text-md">Gallery</a>
+                            <a href="" class="nav-link text-md">Contact us</a>
+                            <a type="button" href="/addmission/addmision.html"
+                                class="btn btn rounded-pill btn-blue text-md  px-4 py-1 m-0">Admission</a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+    </div>
+    <div onclick="hideMenu()" id="hideMenu" class="overlay-menu"></div>
+
+    <!-- auto slider -->
+    <div class=" position-relative smooth-carousel py-4 my-3 pe-4 mt-2 d-flex justify-content-center align-items-center  rounded-pill mx-xl-5 mx-lg-3 mx-md-2 "
+        id="main">
+        <marquee onmouseover="this.stop();" onmouseout="this.start();">
+
+            <a href="" class="text-white px-4 text-decoretion" target="_blank">
+                    Addmision open for
+                    B.com/BAF/BMS</a> 
+            <a href="" class="text-white px-4 text-decoretion" target="_blank">
+                    Addmision open for
+                    B.com/BAF/BMS</a> 
+            <a href="" class="text-white px-4 text-decoretion" target="_blank">
+                    Addmision open for
+                    B.com/BAF/BMS</a> 
+            <a href="" class="text-white px-4 text-decoretion" target="_blank">
+                    Addmision open for
+                    B.com/BAF/BMS</a> 
+        </marquee>
+        <div class="position-absolute end-0 me-2">
+            <button class="btn btn-red rounded-pill  px-3 ">NEW</button>
+        </div>
+    </div>
+
+
+
+    <!-- carousel -->
+    <div class="px-xl-5 px-lg-3 px-md-2 pt-md-4 pt-2 position-relative">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item bg-dark carousel-rounded  active">
+                    <img src="/assets/IMG_20230613_183813.jpg" class="d-block h-75  opacity-25  img-clg w-100" alt="...">
+                </div>
+                <div class="carousel-item bg-dark carousel-rounded ">
+                    <img src="/assets/IMG_20230613_183813.jpg" class="d-block h-75  opacity-25  img-clg w-100" alt="...">
+                </div>
+                <div class="carousel-item bg-dark carousel-rounded ">
+                    <img src="/assets/IMG_20230613_183813.jpg" class="d-block h-75  opacity-25  img-clg w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prevs" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control" aria-hidden="true"> <i
+                        class="bi bi-arrow-left px-2 py-md-0 py-1 mx-md-0 m-md-1"></i></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-nexts" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control" aria-hidden="true"><i
+                        class="bi bi-arrow-right px-2 py-md-0 py-1 mx-md-0 m-md-1 "></i></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="d-flex flex-lg-row flex-column  align-items-center box">
+            <div
+                class="col-xl-5 col-lg-4 col-md-10 col-sm-10 col-12 mt-lg-0 mt-2 box1 ms-xxl-5 ms-xl-3 ms-lg-2 px-4  d-flex align-items-center">
+                <span class="">
+                    <p class="text-bold m-0">E-Brochure</p>
+                    <p class="text-md m-0">Download E-brochure</p>
+                </span>
+                <img src="/img/document-download.png" alt="" width="25" class="ms-auto">
+            </div>
+            <div
+                class="col-xl-5 col-lg-4 col-md-10 col-sm-10 col-12 mt-lg-0 mt-2 box2 px-4 mx-lg-2 d-flex align-items-center">
+                <span class="">
+                    <p class="text-bold m-0">Prospectus</p>
+                    <p class="text-md m-0">Download E-brochure</p>
+                </span>
+                <img src="/img/document-download.png" alt="" width="25" class="ms-auto">
+            </div>
+            <div class="col-xl-5 col-lg-4 col-md-10 col-sm-10 col-12 mt-lg-0 mt-2 box3 px-4 d-flex align-items-center">
+                <span class="">
+                    <p class="text-md m-0">Register Now to Apply</p>
+                    <p class="text-bold text-blue ">Hitkarni College of Commerce</p>
+                </span>
+                <img src="/img/arrow-up.png" alt="" width="25" class="ms-auto">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- about-us -->
+    <div class="d-lg-flex justify-content-center mt-5 pt-lg-5 align-items-center px-2">
+        <div
+            class="col-xl-3 col-lg-4 col-md-6 col-10 d-lg-block d-flex justify-content-center m-lg-0 m-auto align-items-center">
+            <img src="/img/image 2.png" alt="" class="img-fluid">
+
+        </div>
+        <div class="col-lg-5 col-12 ms-lg-5 text-justify px-lg-5 px-2  mt-lg-0 mt-3">
+            <h2 class="text-blue m-0 fs-center">HITKARNI</h2>
+            <p class="fs-5 m-0 lh-1 fs-center">College of LAW</p>
+            <p class="text-sm mt-md-4 mt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem
+                Ipsum
+                has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley
+                of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                also
+                the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                1960s
+                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+
+    <!-- form  -->
+    <div class="position-relative my-5 px-lg-0 px-2" id="contact">
+        <img src="/img/image 4 (1).png" alt="" class="img-cover d-lg-block d-none">
+        <div class="d-lg-flex justify-content-evenly position-top align-items-center">
+            <div class="col-xl-6 col-lg-5 ">
+                <div class=" px-lg-0 px-2">
+                    <h4 class="text-lg lh-1 form-text">Lorem Ipsum is simply dummy text of the printing</h4>
+                    <p class="text-sm form-text mt-lg-0 mt-3 text-justify ">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting
+                        industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer
+                        took a galley of type and scrambled it to make a type specimen book. It has survived not
+                        only
+                        five centuries, but also the leap into electronic typesetting, remaining essentially
+                        unchanged.
+                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        passages, and more recently with desktop publishing software like Aldus PageMaker including
+                        versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-5 col-12 bg-white p-md-4 p-1 form border">
+                <form action="">
+                    <p class="text-center text-md fw-bold">Admission Open 2023 - 2024</p>
+                    <div class="mb-xxl-3 mb-xl-2 mb-lg-1 mb-3">
+                        <label for="" class="form-label m-0 text-sm">Name</label>
+                        <input type="text" class="text-md form-control" id="" placeholder="Please enter your full Name"
+                            required>
+                    </div>
+                    <div class="mb-xxl-3 mb-xl-2 mb-lg-1 mb-3">
+                        <label for="" class="form-label m-0 text-sm">Mobile No.</label>
+                        <input type="tel" class="text-md form-control" id=""
+                            placeholder="Please enter your Mobile Number" required>
+                    </div>
+                    <div class="mb-xxl-3 mb-xl-2 mb-lg-1 mb-3">
+                        <label for="" class="form-label m-0 text-sm">Email address</label>
+                        <input type="email" class="text-md form-control" id=""
+                            placeholder="Please enter your Email Address" required>
+                    </div>
+                    <div class=" mb-xxl-3 mb-xl-2 mb-lg-1 mb-3">
+                        <label class="form-label m-0 text-sm" for="">City</label>
+                        <select class="form-select" id="">
+                            <option selected class="text-md">Please enter your city...</option>
+                            <option value="1">varansi</option>
+                            <option value="2">jaunpur</option>
+                            <option value="3">lucknow</option>
+                        </select>
+
+                    </div>
+                    <div class=" mb-3">
+                        <label class="form-label m-0 text-sm" for="">Select-program</label>
+                        <select class="form-select" id="inputGroupSelect02">
+                            <option selected class="text-md">Choose...</option>
+                            <option value="1">varansi</option>
+                            <option value="2">jaunpur</option>
+                            <option value="3">lucknow</option>
+                        </select>
+
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label text-sm" for="">
+                            I agree to receive information regarding my submitted application by signing up
+                            on Hitkarni
+                        </label>
+                    </div>
+
+                    <button class="btn d-flex justify-content-center m-auto btn-blue text-md px-5 py-2 mt-5 "
+                        type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- kjdfkjkfkdf -->
+    <div class="m-0 pb-5 d-md-flex flex-wrap college_details justify-content-md-evenly">
+        <div
+            class=" col-xl-3 py-md-5 py-3 col-lg-3  col-md-6 col-sm-8 px-lg-0 px-sm-4   m-auto d-flex justify-content-center align-items-center ">
+            <div class="card m-lg-0 mx-3">
+                <div class="card-header d-flex justify-content-center align-items-center ">
+                    Announcement
+                </div>
+                <div class="card-body p-xl-1 p-md-0" p-1>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-md">Admission Process 2023-24 <span
+                                class="badge bg-danger d-inline-block ms-5">New</span></li>
+                        <li class="list-group-item text-md text-md">Invitation for Justice B.D. Bal Memorial Lecture :
+                            13th May 2023
+                            at 11.00 am</li>
+                        <li class="list-group-item text-md">Lorem Ipsum is simply dummy text of
+                            industry. Lorem Ipsum has been th</li>
+                        <li class="list-group-item text-md">Lorem Ipsum is simply dummy text of
+                            industry</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div
+            class=" col-xl-3 py-md-5 py-3 col-lg-3  col-md-6 col-sm-8 px-lg-0 px-sm-4   m-auto d-flex justify-content-center align-items-center ">
+            <div class="card m-lg-0 mx-3">
+                <div class="card-header d-flex justify-content-center align-items-center">
+                    Notice Board
+                </div>
+                <div class="card-body p-xl-1 p-md-0 p-1">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-md">Admission Process 2023-24 <span
+                                class="badge bg-danger d-inline-block ms-5">New</span></li>
+                        <li class="list-group-item text-md">Bachelor of Commerce (B.Com.)</li>
+                        <li class="list-group-item text-md">Bachelor of Management Studies (B.M.S.)</li>
+                        <li class="list-group-item text-md">Bachelor of Commerce in Accounts & Finance (B.A.F.)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div
+            class=" col-xl-3 py-md-5 py-3 col-lg-3  col-md-6 col-sm-8 px-lg-0 px-sm-4   m-auto d-flex justify-content-center align-items-center ">
+            <div class="card m-lg-0 mx-3">
+                <div class="card-header d-flex justify-content-center align-items-center">
+                    Events
+                </div>
+                <div class="card-body p-xl-1 p-md-0" p-1>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-md">Admission Process 2023-24 <span
+                                class="badge bg-danger d-inline-block ms-5">New</span></li>
+                        <li class="list-group-item text-md">Invitation for Justice B.D. Bal Memorial Lecture : 13th May
+                            2023
+                            at 11.00 am</li>
+                        <li class="list-group-item text-md">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting
+                            id</li>
+                        <li class="list-group-item text-md">Lorem Ipsum is simply dummy texting
+                            industry</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class=" pt-5 px-xl-5">
+        <div class="d-flex flex-wrap container">
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6">
+                <img src="/img/Group 4.png" alt="" height="60" class="">
+                <p class=" text-gray mt-3 text-md">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.
+                    Lorem
+                    Ipsum has
+                    been the industry's standard dummy text ever since the </p>
+                <p class="mt-4 text-white">College Code : 1181</p>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-12 mt-md-0 mt-2">
+                <p href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-head psudo-border"> About us</p>
+                <a href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-sm  mt-md-4 mt-0">Institute</a>
+                <a href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-sm m-0 ">faculty</a>
+                <a href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-sm m-0 ">campus</a>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-6 mt-md-0 mt-4">
+                <p href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-head psudo-border">Student Corner</p>
+                <a href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-sm m-0  mt-md-4 mt-0">Syllabus</a>
+                <a href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-sm m-0 ">Admission</a>
+                <a href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-sm m-0 ">Library</a>
+                <a href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-sm m-0 ">Committees</a>
+                <a href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-sm m-0 ">Scholarship</a>
+                <a href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-sm m-0 ">Placement</a>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-6 mt-md-0 mt-4">
+                <p href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-head psudo-border">Programs</p>
+                <a href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-sm m-0  mt-md-4 mt-0">BA , LL.B</a>
+                <a href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-sm m-0 ">LL.B</a>
+                <a href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-sm m-0 ">LL.M</a>
+                <a href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-sm m-0 ">D.LL & LW</a>
+                <a href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-sm m-0 ">DTL</a>
+                <a href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-sm m-0 ">TCLE</a>
+                <a href="" class=" nav-link text-white px-sm-1 px-0 py-1 text-sm m-0 ">Ph.D</a>
+            </div>
+            <div class="col-xl-3 col-md-5 ">
+                <p class=" text-gray m-0 pt-3 text-md lh-1 text-head ">Mail us</p>
+                <a href="" class=" nav-link text-white text-md lh-1 px-0 m-0">hitkarnicollegeofcommerce@gmail.com</a>
+                <p class="  text-gray lh-1 text-md mt-3">Call Us</p>
+                <a href="" class=" nav-link text-white lh-1 m-0 px-0">022 6565 6565</a>
+                <a href="" class=" nav-link text-white lh-1 m-0 pb-3 px-0">022 2626 2525</a>
+                <p class=" text-gray m-0 lh-1 py-0">Address</p>
+                <a href="" class=" nav-link text-white m-0 lh-sm px-0">Hitkarni College of Commerce, Lallubhai
+                    Compound,
+                    A Wing, School Building, Mankhurd, Mumbai 400043</a>
+                <a href="" class=" nav-link text-white "></a>
+                <div class="col-12">
+                    <iframe class="rouneded-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.95767159843!2d72.8765785750761!3d19.065598582136882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8944b000767%3A0x2a39647e99d46af!2sKurla!5e0!3m2!1sen!2sin!4v1686072924107!5m2!1sen!2sin"
+                        width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class=" border-gray text-center">
+            <p class="text-sm py-4 text-gray m-0"> Copyright © 2023 Hitkarni college of LAW, All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("hideMenu").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("hideMenu").style.display = "none";
+        }
+    </script>
+
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- owl-carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- map  -->
+
+    <script src="/js/script.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+
+</html>
